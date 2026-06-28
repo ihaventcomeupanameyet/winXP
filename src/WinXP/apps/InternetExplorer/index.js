@@ -361,6 +361,10 @@ const Div = styled.div`
     border-left: 1px solid #6f6f6f;
     background-color: #f1f1f1;
     position: relative;
+    scrollbar-width: none;
+  }
+  .ie__content::-webkit-scrollbar {
+    display: none;
   }
   .ie__content__inner {
     position: relative;
