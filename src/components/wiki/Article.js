@@ -33,7 +33,7 @@ function Article({ title, subtitle, tableOfContents, infobox, children }) {
         {infobox}
       </div>
       <footer className="wiki-article__footer">
-        This page was last edited on 24 June 2026. Text is available under the
+        This page was last edited on 28 June 2026. Text is available under the
         Creative Commons Attribution-ShareAlike License.
       </footer>
     </main>

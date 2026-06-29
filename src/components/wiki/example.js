@@ -10,8 +10,8 @@ import WikipediaLayout from './WikipediaLayout';
 const sections = [
   { id: 'earlyLife', label: 'Early Life' },
   { id: 'Education', label: 'Education' },
-  { id: 'standards', label: 'Standards' },
-  { id: 'impact', label: 'Social impact' },
+  { id: 'interests', label: 'Interests' },
+  { id: 'external-links', label: 'External links' },
   { id: 'references', label: 'References' },
 ];
 
@@ -29,6 +29,11 @@ const dad = {
 const mom = {
   src: './song_with_mom.jpg',
   alt: 'Song with his mom',
+};
+
+const hiking = {
+  src: './hiking.jpeg',
+  alt: 'Song hiking with friends near Vancouver.',
 };
 
 function ExampleArticle() {
@@ -73,12 +78,11 @@ function ExampleArticle() {
           images={[
             {
               ...dad,
-              caption: 'Song with his dad, hiking',
+              caption: 'Song with his dad, hiking.',
             },
             {
               ...mom,
-              caption:
-                'Song with his mom, walking in the park during his childhood in China.',
+              caption: 'Song with his mom, walking in the park.',
             },
           ]}
         >
@@ -133,16 +137,14 @@ function ExampleArticle() {
           </p>
 
           <p>
-            Following high school, Song spent time at
+            Following high school, Song spent time at{' '}
             <a href="#vancouver-island-university">
-              {' '}
-              Vancouver Island University (VIU){' '}
-            </a>
-            before transferring to the
+              Vancouver Island University (VIU)
+            </a>{' '}
+            before transferring to the{' '}
             <a href="#university-of-british-columbia">
-              {' '}
-              University of British Columbia{' '}
-            </a>
+              University of British Columbia
+            </a>{' '}
             to pursue a degree in
             <a href="#computer-science"> Computer Science</a>.
           </p>
@@ -157,44 +159,99 @@ function ExampleArticle() {
           </p>
         </Section>
 
-        <Section id="standards" title="Standards">
+        <Section
+          id="interests"
+          title="Interests"
+          images={[
+            {
+              ...hiking,
+              caption: 'Song hiking with friends near Vancouver.',
+            },
+          ]}
+        >
           <p>
-            The <a href="#w3c">World Wide Web Consortium</a> develops many of
-            the Web's core technical standards. HTML describes document
-            structure, CSS controls presentation, and JavaScript enables
-            behavior. Accessibility standards help authors make those documents
-            usable by more people.
+            Song's technical interests include artificial intelligence, computer
+            graphics, operating systems, and interactive web technologies. He is
+            particularly interested in projects that combine practical software
+            engineering with visual and interactive user experiences.
+          </p>
+
+          <p>
+            Outside of software development, Song enjoys hiking and exploring
+            the mountains, forests, and coastal trails around
+            <a href="#vancouver"> Vancouver</a> and
+            <a href="#british-columbia"> British Columbia</a>. He frequently
+            visits regional parks and mountain viewpoints, often bringing a
+            camera to document landscapes and seasonal scenery.
+          </p>
+
+          <p>
+            He also enjoys experimenting with new technologies through personal
+            projects, particularly those involving React, Three.js, backend
+            systems, and large language models.
           </p>
         </Section>
 
-        <Section id="impact" title="Social impact">
-          <p>
-            The Web made publishing available to individuals and organizations
-            at global scale. It reshaped communication, education, commerce,
-            entertainment, and public administration, while also creating
-            ongoing debates about privacy, misinformation, access, and platform
-            power.
-          </p>
+        <Section id="external-links" title="External links">
+          <ul>
+            <li>
+              <a
+                href="https://github.com/ihaventcomeupanameyet"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/song-shi-2b5250278/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </li>
+          </ul>
         </Section>
 
         <ReferenceList
           references={[
             {
-              author: 'Berners-Lee, Tim',
-              title: 'Information Management: A Proposal',
-              href: '#cern-proposal',
-              details: 'CERN, March 1989',
+              author: 'University of British Columbia',
+              title: 'Bachelor of Science in Computer Science',
+              href: '#ubc-degree',
+              details: 'Graduation records, 2025',
             },
             {
-              author: 'World Wide Web Consortium',
-              title: 'A Little History of the World Wide Web',
-              href: '#web-history',
+              author: 'University of British Columbia Department of Statistics',
+              title: 'Undergraduate Research Assistant',
+              href: '#ubc-research',
+              details: 'Research project, 2023',
             },
             {
-              author: 'Gillies, James and Cailliau, Robert',
-              title: 'How the Web Was Born',
-              href: '#how-the-web-was-born',
-              details: 'Oxford University Press, 2000',
+              author: 'GitHub',
+              title: 'Song Shi',
+              href: 'https://github.com/yourusername',
+              details: 'Software projects and source code',
+            },
+            {
+              author: 'LinkedIn',
+              title: 'Song Shi',
+              href: 'https://linkedin.com/in/yourusername',
+              details: 'Professional profile',
+            },
+            {
+              author: 'Personal Archives',
+              title: 'Family Photograph Collection',
+              href: '#family-photos',
+              details: 'Childhood and education photographs',
+            },
+            {
+              author: 'Personal Notes',
+              title: 'Early Computing Experiences',
+              href: '#early-life',
+              details: 'Compiled from personal recollections',
             },
           ]}
         />
