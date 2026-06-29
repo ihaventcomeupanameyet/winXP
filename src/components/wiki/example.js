@@ -8,86 +8,152 @@ import TableOfContents from './TableOfContents';
 import WikipediaLayout from './WikipediaLayout';
 
 const sections = [
-  { id: 'history', label: 'History' },
-  { id: 'function', label: 'Function' },
+  { id: 'earlyLife', label: 'Early Life' },
+  { id: 'Education', label: 'Education' },
   { id: 'standards', label: 'Standards' },
   { id: 'impact', label: 'Social impact' },
   { id: 'references', label: 'References' },
 ];
 
-const firstServer = {
-  src:
-    'https://upload.wikimedia.org/wikipedia/commons/d/d1/First_Web_Server.jpg',
-  alt: 'The first web server, a NeXT computer at CERN',
+const grad = {
+  src: './grad.jpg',
+  alt:
+    'Song Shi at his graduation ceremony from the University of British Columbia',
+};
+
+const dad = {
+  src: './song_with_dad.jpg',
+  alt: 'Song with his dad',
+};
+
+const mom = {
+  src: './song_with_mom.jpg',
+  alt: 'Song with his mom',
 };
 
 function ExampleArticle() {
   return (
     <WikipediaLayout>
       <Article
-        title="World Wide Web"
-        subtitle="Global information system accessed through the Internet"
+        title="Song Shi"
+        subtitle="Software developer and computer science graduate"
         tableOfContents={<TableOfContents items={sections} />}
         infobox={
           <Infobox
-            title="World Wide Web"
-            image={firstServer}
-            caption="The NeXT computer used by Tim Berners-Lee as the first web server"
+            title="Song Shi"
+            image={grad}
+            caption=""
             rows={[
-              ['Inventor', <a href="#tim-berners-lee">Tim Berners-Lee</a>],
-              ['Inception', '12 March 1989'],
-              ['Available', 'Worldwide'],
-              ['Protocols', 'HTTP and HTTPS'],
-              ['Primary format', 'HTML'],
+              ['Born', '2000'],
+              [
+                'Education',
+                <a href="#education">University of British Columbia</a>,
+              ],
+              ['Occupation', 'Software developer'],
+              [
+                'Interested in',
+                'AI applications, RAG systems, and computer graphics',
+              ],
             ]}
           />
         }
       >
         <p className="wiki-article__lead" id="top">
-          The <strong>World Wide Web</strong> (also known as the{' '}
-          <strong>Web</strong>) is an information system that enables content
-          sharing over the <a href="#internet">Internet</a> through
-          user-friendly ways meant to appeal to users beyond information
-          technology specialists and hobbyists. It allows documents and other
-          web resources to be accessed over the Internet according to specific
-          rules of the Hypertext Transfer Protocol.
+          <strong>Song Shi</strong> is a Canadian-based software developer and
+          computer science graduate whose work focuses on artificial
+          intelligence, computer graphics, and interactive web technologies. His
+          projects primarily explore the intersection of modern AI systems,
+          real-time 3D graphics, and user experience, with an emphasis on
+          building practical software and visually distinctive applications.
         </p>
 
-        <Section id="history" title="History">
+        <Section
+          id="earlyLife"
+          title="Early Life"
+          images={[
+            {
+              ...dad,
+              caption: 'Song with his dad, hiking',
+            },
+            {
+              ...mom,
+              caption:
+                'Song with his mom, walking in the park during his childhood in China.',
+            },
+          ]}
+        >
           <p>
-            English computer scientist{' '}
-            <a href="#tim-berners-lee">Tim Berners-Lee</a>
-            conceived the Web at CERN in 1989. His proposal joined hypertext
-            with the Internet so researchers could publish and connect documents
-            across different computer systems. By the end of 1990, he had
-            created the first web browser, server, and website.
+            Song was born in <a href="#china">China</a> in 2000 and was
+            introduced to
+            <a href="#personal-computer"> personal computers </a> at an early
+            age through his family. His father used a desktop computer for
+            office work, although Song was rarely allowed to use it himself.
+            Instead, he often visited his grandparents' home, where his aunt
+            owned a computer that became his main opportunity to explore
+            software and <a href="#video-games">video games</a>. He frequently
+            downloaded new games from the <a href="#internet">Internet</a>, only
+            to find that many of them had been deleted by the time he returned
+            the following week because they occupied too much disk space.
           </p>
+
           <p>
-            CERN released the Web software into the public domain in 1993. Open
-            access, along with the arrival of graphical browsers, encouraged
-            rapid adoption by universities, businesses, and the public.
+            One of Song's earliest memories of learning about computers came
+            from a conversation with his father, who explained that data moved
+            between hardware components through something called a{' '}
+            <a href="#bus">bus</a>. As a child, Song believed the term referred
+            to a vehicle carrying information around inside the computer. Years
+            later, while studying
+            <a href="#computer-architecture">computer architecture</a>, he
+            discovered that "bus" was in fact the formal engineering term for
+            the communication system connecting hardware components.
           </p>
         </Section>
 
         <Section
-          id="function"
-          title="Function"
-          image={{
-            ...firstServer,
-            caption:
-              'The first web server carried a handwritten warning not to switch it off.',
-          }}
+          id="Education"
+          title="Education"
+          images={[
+            {
+              ...grad,
+              caption: 'Song at graduation ceremony(2025)',
+            },
+          ]}
         >
           <p>
-            A web browser requests a resource from a web server using HTTP. The
-            server responds with an HTML document and related resources such as
-            images and style sheets. The browser interprets these files and
-            presents an interactive page to the reader.
+            Song completed his primary and middle school education in
+            <a href="#china"> China</a>. At the age of sixteen, he moved to
+            <a href="#canada"> Canada</a>, where he attended
+            <a href="#ballenas-secondary-school">
+              {' '}
+              Ballenas Secondary School
+            </a>{' '}
+            in Parksville, British Columbia. During this period, he adapted to a
+            new language, culture, and educational system while completing his
+            secondary education.
           </p>
+
           <p>
-            Hyperlinks connect resources by their uniform resource locators.
-            This simple linking model creates a distributed network of documents
-            whose publishers do not need to coordinate with one another.
+            Following high school, Song spent time at
+            <a href="#vancouver-island-university">
+              {' '}
+              Vancouver Island University (VIU){' '}
+            </a>
+            before transferring to the
+            <a href="#university-of-british-columbia">
+              {' '}
+              University of British Columbia{' '}
+            </a>
+            to pursue a degree in
+            <a href="#computer-science"> Computer Science</a>.
+          </p>
+
+          <p>
+            At UBC, Song developed interests in software engineering, computer
+            graphics, computer systems, and artificial intelligence. Alongside
+            his coursework, he participated in undergraduate research involving
+            statistical methods and data analysis, while also building personal
+            projects in web development, graphics programming, and AI
+            applications.
           </p>
         </Section>
 

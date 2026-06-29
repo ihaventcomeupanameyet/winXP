@@ -110,7 +110,7 @@ function InternetExplorer({ onClose }) {
         <div className="ie__address_bar__content">
           <img src={ie} alt="ie" className="ie__address_bar__content__img" />
           <div className="ie__address_bar__content__text">
-            https://en.wikipedia.org/wiki/World_Wide_Web
+            https://en.wikipedia.org/wiki/Song_Shi
           </div>
           <img
             src={dropdown}
