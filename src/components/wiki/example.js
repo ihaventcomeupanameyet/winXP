@@ -16,23 +16,23 @@ const sections = [
 ];
 
 const grad = {
-  src: './grad.jpg',
+  src: '/grad.jpg',
   alt:
     'Song Shi at his graduation ceremony from the University of British Columbia',
 };
 
 const dad = {
-  src: './song_with_dad.jpg',
+  src: '/song_with_dad.jpg',
   alt: 'Song with his dad',
 };
 
 const mom = {
-  src: './song_with_mom.jpg',
+  src: '/song_with_mom.jpg',
   alt: 'Song with his mom',
 };
 
 const hiking = {
-  src: './hiking.jpeg',
+  src: '/hiking.jpeg',
   alt: 'Song hiking with friends near Vancouver.',
 };
 
