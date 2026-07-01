@@ -41,8 +41,8 @@ describe('useParentMouseBridge', () => {
     document.dispatchEvent(new MouseEvent('mouseup', { bubbles: true }));
 
     expect(postMessage.mock.calls).toEqual([
-      [{ type: 'mousedown' }, 'https://parent.example.com'],
-      [{ type: 'mouseup' }, 'https://parent.example.com'],
+      [{ type: 'mousedown' }, '*'],
+      [{ type: 'mouseup' }, '*'],
     ]);
 
     act(() => {

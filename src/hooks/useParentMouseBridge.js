@@ -1,17 +1,15 @@
 import { useEffect } from 'react';
 
-const parentOrigin = process.env.REACT_APP_PARENT_ORIGIN;
-
 const useParentMouseBridge = () => {
   useEffect(() => {
-    if (window.parent === window || !parentOrigin) return undefined;
+    if (window.parent === window) return undefined;
 
     const sendMouseDown = () => {
-      window.parent.postMessage({ type: 'mousedown' }, parentOrigin);
+      window.parent.postMessage({ type: 'mousedown' }, '*');
     };
 
     const sendMouseUp = () => {
-      window.parent.postMessage({ type: 'mouseup' }, parentOrigin);
+      window.parent.postMessage({ type: 'mouseup' }, '*');
     };
 
     document.addEventListener('mousedown', sendMouseDown, true);
