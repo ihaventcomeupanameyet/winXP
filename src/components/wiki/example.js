@@ -107,7 +107,7 @@ function ExampleArticle() {
             <a href="#bus">bus</a>. As a child, Song believed the term referred
             to a vehicle carrying information around inside the computer. Years
             later, while studying
-            <a href="#computer-architecture">computer architecture</a>, he
+            <a href="#computer-architecture"> computer architecture</a>, he
             discovered that "bus" was in fact the formal engineering term for
             the communication system connecting hardware components.
           </p>
