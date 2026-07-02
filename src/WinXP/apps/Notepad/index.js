@@ -4,8 +4,34 @@ import styled from 'styled-components';
 import { WindowDropDowns } from 'components';
 import dropDownData from './dropDownData';
 
+const credits = `Credits
+
+Special thanks to the creators whose work inspired this project.
+
+Henry Heffernan
+https://henryheffernan.com
+
+Yuming Huang
+https://yuminghuang.com
+
+ShizukuIchi
+React Windows XP
+https://github.com/ShizukuIchi/winXP
+
+3D Model
+Commodore 64 (Full Pack)
+by dark_igorek
+https://sketchfab.com/dark_igorek
+
+Model:
+https://sketchfab.com/3d-models/commodore-64-computer-full-pack-1f43612fa2d54041bbe2bdff8164c2cd
+
+License
+CC BY 4.0
+https://creativecommons.org/licenses/by/4.0/`;
+
 export default function Notepad({ onClose }) {
-  const [docText, setDocText] = useState('');
+  const [docText, setDocText] = useState(credits);
   const [wordWrap, setWordWrap] = useState(false);
 
   function onClickOptionItem(item) {

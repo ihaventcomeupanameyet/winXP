@@ -10,6 +10,7 @@ import WikipediaLayout from './WikipediaLayout';
 const sections = [
   { id: 'earlyLife', label: 'Early Life' },
   { id: 'Education', label: 'Education' },
+  { id: 'academic-achievements', label: 'Academic Achievements' },
   { id: 'interests', label: 'Interests' },
   { id: 'external-links', label: 'External links' },
   { id: 'references', label: 'References' },
@@ -159,6 +160,16 @@ function ExampleArticle() {
           </p>
         </Section>
 
+        <Section id="academic-achievements" title="Academic Achievements">
+          <ul>
+            <li>Dean's List, 2023 Winter Session</li>
+            <li>
+              2023 Work Learn International Undergraduate Research Awards,
+              Department of Statistics, Chen Lab
+            </li>
+          </ul>
+        </Section>
+
         <Section
           id="interests"
           title="Interests"
@@ -210,6 +221,11 @@ function ExampleArticle() {
                 rel="noopener noreferrer"
               >
                 LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                Resume
               </a>
             </li>
           </ul>

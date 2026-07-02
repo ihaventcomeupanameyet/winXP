@@ -30,7 +30,7 @@ export const defaultAppState = [
   {
     component: InternetExplorer,
     header: {
-      title: 'Internet Explorer',
+      title: 'Personal Info',
       icon: iePaper,
     },
     defaultSize: {
@@ -53,7 +53,7 @@ export const defaultIconState = [
   {
     id: 0,
     icon: ie,
-    title: 'Internet Explorer',
+    title: 'Personal Info',
     component: InternetExplorer,
     isFocus: false,
   },
@@ -74,7 +74,7 @@ export const defaultIconState = [
   {
     id: 3,
     icon: notepadLarge,
-    title: 'Notepad',
+    title: 'Credits',
     component: Notepad,
     isFocus: false,
   },
@@ -98,7 +98,7 @@ export const appSettings = {
   'Internet Explorer': {
     header: {
       icon: iePaper,
-      title: 'InternetExplorer',
+      title: 'Personal Info',
     },
     component: InternetExplorer,
     defaultSize: {
@@ -176,7 +176,7 @@ export const appSettings = {
   Notepad: {
     header: {
       icon: notepad,
-      title: 'Untitled - Notepad',
+      title: 'Credits',
     },
     component: Notepad,
     defaultSize: {
